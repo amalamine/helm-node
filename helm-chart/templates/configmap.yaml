@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: redis-config
+data:
+  redisHost: "{{ .Values.env.REDIS_HOST }}"
+  redisPort: "{{ .Values.env.REDIS_PORT }}"
